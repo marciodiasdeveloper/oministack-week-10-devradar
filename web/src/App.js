@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import './global.css';
 import './App.css';
+import './Sidebar.css';
+import './Main.css';
 
 function App() {
 
@@ -35,7 +37,55 @@ function App() {
           <button type="submit">Salvar</button>
         </form>
       </aside>
-      <main></main>
+      
+      <main>
+        <ul>
+          <li className="dev-item">
+            <header>
+              <img src="https://avatars2.githubusercontent.com/u/75541?v=4" alt=""/>
+              <div className="user-info">
+                <strong>Diego Fernandes</strong>
+                <span>ReactJS,React Native, Node.js</span>
+                <p>Descrição</p>
+                <a href="https://github.com/marciodiasdeveloper"></a>
+              </div>
+            </header>
+          </li>
+          <li className="dev-item">
+            <header>
+              <img src="https://avatars2.githubusercontent.com/u/75541?v=4" alt=""/>
+              <div className="user-info">
+                <strong>Diego Fernandes</strong>
+                <span>ReactJS,React Native, Node.js</span>
+                <p>Descrição</p>
+                <a href="https://github.com/marciodiasdeveloper"></a>
+              </div>
+            </header>
+          </li>
+          <li className="dev-item">
+            <header>
+              <img src="https://avatars2.githubusercontent.com/u/75541?v=4" alt=""/>
+              <div className="user-info">
+                <strong>Diego Fernandes</strong>
+                <span>ReactJS,React Native, Node.js</span>
+                <p>Descrição</p>
+                <a href="https://github.com/marciodiasdeveloper"></a>
+              </div>
+            </header>
+          </li>
+          <li className="dev-item">
+            <header>
+              <img src="https://avatars2.githubusercontent.com/u/75541?v=4" alt=""/>
+              <div className="user-info">
+                <strong>Diego Fernandes</strong>
+                <span>ReactJS,React Native, Node.js</span>
+                <p>Descrição</p>
+                <a href="https://github.com/marciodiasdeveloper"></a>
+              </div>
+            </header>
+          </li>
+        </ul>
+      </main>
     </div>
   );
 
