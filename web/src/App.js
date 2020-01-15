@@ -35,6 +35,7 @@ function App() {
       const response = await api.get('/devs');
       setDevs(response.data);
     }
+    loadDevs();
   }, []);
   async function handleAddDev(e) {
     e.preventDefault();
@@ -48,6 +49,7 @@ function App() {
 
     setGithubUsername('');
     setTechs('');
+    setDevs([...devs, response.data]);
 
   };
 
@@ -109,7 +111,7 @@ function App() {
       <main>
         <ul>
           {devs.map(dev=> (
-            <li className="dev-item">
+            <li key={dev._id} className="dev-item">
               <header>
                 <img src="{dev.avatar_url}" alt=""/>
                 <div className="user-info">
