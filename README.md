@@ -1,3 +1,3 @@
 # omnistack10
 
-Projeto da semana OminiStack 9.0
+Projeto da semana OminiStack 10.0
